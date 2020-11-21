@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/all.css">
+    <link rel="stylesheet" href="/static/css/common/style.css">
+    <link rel="stylesheet" href="/static/css/common/header.css">
+    <link rel="stylesheet" href="/static/css/common/sidebar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <style>
+        .show {
+            display: flex;
+        }
+    </style>
+
+    <div id="header">
+        <div id="header__menu">
+            <i class="fas fa-bars" id="header__menu__icon"></i>
+        </div>
+        <div id="header__logo">BrandName</div>
+        <div id="header__user">
+            <div id="header__user__login" onclick="window.location.href='/login'">Login</div>
+            <div id="header__user__register" onclick="window.location.href='/register'">Create account</div>
+        </div>
+
+    </div>
+
+    <div id="sidebar">
+        <div id="sidebar__side">
+
+            <div id="sidebar__side__backspace">
+                <i class="sidebar__side__icon fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar__side__item sidebar__side__item__active" data-side="user">
+                <i class="sidebar__side__item__icon fas fa-user sidebar__side__item__active" data-side="user"></i>
+            </div>
+            <div class="sidebar__side__item" data-side="setting">
+                <i class="sidebar__side__item__icon fas fa-cog" data-side="setting"></i>
+            </div>
+            <div class="sidebar__side__item" data-side="notification">
+                <i class="sidebar__side__item__icon far fa-bell" data-side="notification"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/static/js/common/common.js"></script>
+    <script src="/static/js/common/header.js"></script>
+    <!--  -->
+    {% if user.is_authenticated %}
+    {% endif %}
+    {% block content %}
+    {% endblock %}
+
+    <!--     <button id="testbtn"> 테스트 버튼입니다!</button> -->
+
+
+
+</body>
+
+</html>
