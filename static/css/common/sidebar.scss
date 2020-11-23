@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80px;
+    width: 25%;
     height: 100%;
     background-color: #F8F8FA;
 }
@@ -51,6 +51,49 @@
     background-color: #2D45C5;
     color: white;
 }
+
+
+
+#sidebar__body{
+    display: flex;
+    width: 75%;
+    background-color: lightslategrey;
+}
+
+#sidebar__body__item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15%;
+    background-color: lightgreen;
+}
+
+#sidebar__body__item__contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+    width: 100%;
+    height: 80px;
+    color: #{$color-sidebar};
+    font-size: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

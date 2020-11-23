@@ -4,8 +4,8 @@
 #register {
     display: flex;
     margin: auto;
-    margin-top: 15vh;
-    width: 95vw;
+    margin-top: 10vh;
+    width: 98vw;
     max-width: 600px;
     background-color: #F8FAFD;
     border-radius: 1rem;
@@ -125,75 +125,17 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  */
-#register__form__hr {
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-}
-
-#register__form__hr__item {
-    color: rosybrown;
-    width: 40%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}
-
-#register__form__sns {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.register__form__sns__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 0;
-    
-    border-radius: 0.5rem;
-    width: 100%;
-    height: 50px;
-    cursor: pointer;
-}
-
-.register__form__sns__item__img {
-    width: 23px;
-    height: 23px;
-}
-
-#register__form__sns__google{
-    
-    color:#EC3D29;
-    border: 1px solid #EC3D29;
-}
-#register__form__sns__facebook{
-    
-    color:#3A589B;
-    border: 1px solid #3A589B;
+@include mobile{
+    #register{
+        font-size: 0.75rem;
+        margin-top: 5vh;
+    }
 }
 
 
+
+@include tablet{
+    #register{
+        max-width: 75vw;
+    }
+}

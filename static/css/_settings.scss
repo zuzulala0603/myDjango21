@@ -62,7 +62,7 @@ $box-shadow-btn : 4px 4px 12px 4px rgba(25, 49, 146, 0.14);
 
 $breakpoint-mobile: 335px;
 $breakpoint-tablet: 758px;
-$breakpoint-desktop: 1024px;
+$breakpoint-desktop: 1025px;
 
 @mixin mobile {
     @media (max-width: #{$breakpoint-tablet - 1px}) {
