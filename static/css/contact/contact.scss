@@ -7,7 +7,7 @@
     margin-top: 5vh;
     width: 95vw;
     max-width: 1100px;
-    height: 700px;
+/*     height: 70vh; */
     border-radius: 1rem;
     background-color: #F8FAFD;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -19,8 +19,9 @@
     align-items: center;
     width: 40%;
     height: 80%;
-    margin-top: 5%;
     margin-right: 5%;
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
     color: #8CA1D1;
 /*     background-color: lightskyblue; */
 
@@ -30,6 +31,7 @@
     color: #{$color-primary};
     font-size: 30px;
     font-weight: 900;
+    padding-bottom: 5%;
     font-family: 'Cafe24Ohsquare';
 }
 
@@ -61,13 +63,13 @@
 #contact__form__email__input{
   width: 98%;
   height: 50px;
-  font-size: 20px;
+  font-size: 1rem;
   text-indent: 15px;
   margin-top: 10px;
 }
 #contact__form__msg__input{
   width: 98%;
-  font-size: 20px;
+  font-size: 1rem;
   text-indent: 15px;
   margin-top: 10px;
 }
@@ -79,7 +81,7 @@
     align-items: center;
     width: 60%;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 5%;
     border-radius: 1rem;
     color: white;
     background-color: #{$color-primary};
@@ -97,7 +99,8 @@
     flex-direction: column;
     width: 40%;
     height: 80%;
-    margin-top: 5%;
+    padding-top: 10%;
+    padding-bottom: 7.5%;
     color: #8CA1D1;
   }
 
@@ -109,4 +112,36 @@
 
 #contact__info__email{
   margin-top: 150px;
+}
+
+
+
+
+
+@include mobile{
+
+
+  #contact{
+    font-size: 0.75rem;
+    min-height: 80vh;
+   
+  }
+
+
+
+  #contact__form{
+    width: 80%;
+    margin-top: 5%;
+
+  }
+  #contact__info{
+    display: none;
+  }
+}
+
+
+@include tablet{
+  #contact{
+    max-width: 95vw;
+  }
 }

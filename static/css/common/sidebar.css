@@ -25,6 +25,7 @@
   display: none;
   position: absolute;
   top: 0;
+  z-index: 99;
   background-color: white;
   border-right: 1px solid white;
   -webkit-box-shadow: 12px 4px 12px 0 rgba(25, 49, 146, 0.14);
@@ -173,5 +174,11 @@
   }
   to {
     left: -450px;
+  }
+}
+
+@media (max-width: 757px) {
+  #sidebar {
+    width: 100vw;
   }
 }
